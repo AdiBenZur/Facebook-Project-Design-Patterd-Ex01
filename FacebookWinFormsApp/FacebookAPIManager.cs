@@ -30,7 +30,7 @@ namespace BasicFacebookFeatures
 
             if (io_ListBoxFriends.Items.Count == 0)
             {
-                MessageBox.Show("No friends to retrieve!");
+                MessageBox.Show("No friends to display!");
             }
         }
 
@@ -63,7 +63,7 @@ namespace BasicFacebookFeatures
 
             if (io_ListBoxPost.Items.Count == 0)
             {
-                MessageBox.Show("No Posts to retrieve!");
+                MessageBox.Show("No Posts to display!");
             }
         }
 
@@ -85,7 +85,7 @@ namespace BasicFacebookFeatures
 
             if (io_ListBoxComments.Items.Count == 0)
             {
-                MessageBox.Show("No Comments to retrieve!");
+                MessageBox.Show("No Comments to display!");
             }
         }
 
@@ -105,10 +105,9 @@ namespace BasicFacebookFeatures
                 MessageBox.Show(ex.Message);
             }
 
-
             if (io_ListBoxComments.Items.Count == 0)
             {
-                MessageBox.Show("No Likes to retrieve :(");
+                MessageBox.Show("No Likes to display!");
             }
         }
 
@@ -128,10 +127,9 @@ namespace BasicFacebookFeatures
                 MessageBox.Show(ex.Message);
             }
 
-
             if (io_ListBoxAlbums.Items.Count == 0)
             {
-                MessageBox.Show("No Albums to retrieve!");
+                MessageBox.Show("No Albums to display!");
             }
         }
 
@@ -153,7 +151,7 @@ namespace BasicFacebookFeatures
 
             if (io_ListBoxEvents.Items.Count == 0)
             {
-                MessageBox.Show("No Events to retrieve!");
+                MessageBox.Show("No Events to display!");
             }
         }
 
@@ -176,7 +174,7 @@ namespace BasicFacebookFeatures
 
             if (io_ListBoxLikedPages.Items.Count == 0)
             {
-                MessageBox.Show("No liked pages to retrieve!");
+                MessageBox.Show("No liked pages to display!");
             }
         }
 
@@ -222,7 +220,6 @@ namespace BasicFacebookFeatures
                     io_PictureBoxPhoto.Image = io_PictureBoxPhoto.ErrorImage;
                 }
 
-
             }
             catch (Exception ex)
             {
@@ -264,14 +261,12 @@ namespace BasicFacebookFeatures
 
                 if (MostCommentPhoto.PictureNormalURL != null)
                 {
-
                     io_PictureBoxPhoto.LoadAsync(MostCommentPhoto.PictureNormalURL);
                 }
                 else
                 {
                     io_PictureBoxPhoto.Image = io_PictureBoxPhoto.ErrorImage;
                 }
-
 
             }
             catch (Exception ex)
