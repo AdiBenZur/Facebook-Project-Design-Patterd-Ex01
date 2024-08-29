@@ -9,7 +9,6 @@ using System.Xml.Serialization;
 using BasicFacebookFeatures;
 using FacebookWrapper.ObjectModel;
 
-
 namespace BasicFacebookFeatures
 {
     class XmlFileManager
